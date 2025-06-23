@@ -23,8 +23,8 @@ A **top-down 2D maze game** built with **JavaScript** for the frontend and **Fla
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/rogue-maze.git
-cd rogue-maze
+git clone https://github.com/S-Taylor-J/Escape-the-Dark.git
+cd Escape-the-Dark
 ```
 2. (Optional but recommended) Create a virtual environment:
 ``` bash

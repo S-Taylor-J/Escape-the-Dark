@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Escape the Dark</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/landingPage.css') }}">
+<script type="module" src="{{ url_for('static', filename='js/landingPage.js') }}"></script>
+{% endblock %}
+
+<body data-homepage-url="{{ url_for('homepage') }}"></body>
+{% block content %}
+<p>Click SPACE to start</p>
+{% endblock %}

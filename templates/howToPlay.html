@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Escape the Dark</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/howToPlay.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<div id="objective">
+    <h1>How to Play</h1>
+    <h2>Objective</h2>
+    <p>The objective of the game is to escape the dark by getting to the end of the mazes as quickly as possible.</p>
+</div>
+
+<div id="howToPlay">
+    <div>
+        <h2>Gameplay</h2>
+        <p>
+            Prepare to enter a treacherous maze where darkness lurks at every turn. With only a glimmer of light and
+            dwindling health, you must fight your way to the exit, all while facing relentless enemies, deadly traps,
+            and the constant threat of the Skull of Fury hot on your heels. But it's not all doom and gloom—hidden
+            throughout the maze are chests filled with priceless treasures and powerful potions to aid your survival.
+            Use your loot to stock up on potions or upgrade your character, each of whom comes with unique stats and
+            abilities. Choose your hero wisely, for every decision counts. The faster you escape each level, the greater
+            the rewards—so run and conquer before the maze consumes you!
+        </p>
+
+    </div>
+    <div id="controls">
+        <h2>Controls</h2>
+        <div class="information">
+            <div>
+                <img src="{{ url_for('static', filename='assets/howToPlay/buttons.png') }}" alt="">
+                <p> - Player can move using the arrow keys</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='assets/howToPlay/keyboard-button.png') }}" alt="">
+                <p> - Player can move using the WASD keys</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='assets/howToPlay/shift.png') }}" alt="">
+                <p> - Player can open their inventory by pressing the shift key</p>
+            </div>
+            <div>
+                <img class="individualBtn" src="{{ url_for('static', filename='assets/howToPlay/eBtn.png') }}" alt="">
+                <p> - Player can activate an ability by pressing the E key</p>
+            </div>
+            <div>
+                <img class="individualBtn" src="{{ url_for('static', filename='assets/howToPlay/tBtn.png') }}" alt="">
+                <p> - Player can open the shop by pressing the T key</p>
+            </div>
+            <div>
+                <img class="individualBtn" src="{{ url_for('static', filename='assets/howToPlay/cBtn.png') }}" alt="">
+                <p> - Player can open the cheat menu by pressing the C key</p>
+            </div>
+            <div>
+                <img class="individualBtn" src="{{ url_for('static', filename='assets/howToPlay/qBtn.png') }}" alt="">
+                <p> - Player can stun the Skull of Fury if in range by pressing the Q key</p>
+            </div>
+        </div>
+    </div>
+    <div id="playerUtility">
+        <h2>Player Utility</h2>
+        <div>
+            <h3>Game Screen</h3>
+            <img class="utilityImg" src="{{ url_for('static', filename='assets/howToPlay/game.png') }}" alt="">
+            <p>The small skulls indicate the player's current health — each one a symbol of your remaining vitality.</p>
+            <br>
+            <p>The bloodied skull tracks your ability cool down. It's your cue for unleashing power.</p> <br>
+            <p>When it glows bright red, your ability is ready to be unleashed — whether it's a devastating stun or a
+                unique special move.</p>
+            <p>Once used, the skull fades to grey, gradually pulsing back to crimson as your power recharges.</p>
+        </div>
+        <div>
+            <h3>Inventory</h3>
+            <img class="utilityImg" src="{{ url_for('static', filename='assets/howToPlay/inventory.png') }}" alt="">
+            <p>Tap the <strong>Shift</strong> key to open your inventory — your gateway to glory.</p> <br>
+            <p>Inside, you'll find everything you’ve collected on your journey. Use potions to boost your stats with
+                ease.
+            </p> <br>
+            <p>Click a potion to instantly drink it, unleashing its effects and enhancing your stats on the fly.</p>
+            <p>Curious about what a potion does? Hover over it to reveal its hidden powers.</p> <br>
+            <p>At a glance, you can also see your current stats and the maximum level your character can reach — a
+                glimpse at your true potential.</p>
+        </div>
+        <div>
+            <h3>Tavern</h3>
+            <img class="utilityImg" src="{{ url_for('static', filename='assets/howToPlay/shop.png') }}" alt="">
+            <p>Press <strong>T</strong> to step into the Tavern — your sanctuary amid the shadows.</p> <br>
+            <p>Within these walls lies everything you need to survive the darkness beyond.</p><br>
+            <p>Need more power? Spend your gold on upgrades and push your stats to new heights.</p><br>
+            <p>Running low on potions? Restock your supply and stay battle-ready.</p><br>
+            <p>Gold reserves running dry? Trade spare potions for coin and keep your adventure funded.</p><br>
+        </div>
+        <div>
+            <h3>Cheat Menu</h3>
+            <img class="utilityImg" src="{{ url_for('static', filename='assets/howToPlay/cheats.png') }}" alt="">
+            <p>Backed into a corner? Press <strong>C</strong> to unlock the <strong>Cheat Menu</strong> — your last
+                resort when all else fails.</p> <br>
+
+            <p>Need gold? One click floods your pockets with limitless riches.</p><br>
+            <p>Traps giving you trouble? Activate invincibility and walk through danger untouched.</p><br>
+            <p>Ability cool downs too slow? Make them instant and unleash your power at will.</p><br>
+            <p>Feeling sluggish? Boost your speed and leave your enemies in the dust.</p><br>
+            <p>Lost in the shadows? Enable night vision and pierce the darkness with ease.</p><br>
+
+        </div>
+    </div>
+
+    <button onclick="window.location.href='https://cs1.ucc.ie/~tjs2/cgi-bin/ca2/run.py/homepage' " class="menuBtn"
+        id="backBtn">Back</button>
+</div>
+
+
+{% endblock %}

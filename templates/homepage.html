@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Escape the Dark</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+<script type="module" src="{{ url_for('static', filename='js/homepage.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="mainContainer">
+    <button id="playBtn" class="play-button menuBtn"><span>PLAY GAME</span></button>
+    <button id="playerSelectBtn" class="menuBtn"><span>PLAYER SELECT</span></button>
+    <button id="howToPlayBtn" class="menuBtn"><span>HOW TO PLAY</span></button>
+    <button id="settingsBtn" class="menuBtn"><span>SETTINGS</span></button>
+    <button id="creditBtn" class="menuBtn"><span>CREDITS</span></button>
+</div>
+
+
+{% endblock %}

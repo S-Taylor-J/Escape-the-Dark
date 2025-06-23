@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script type="module" src="{{ url_for('static', filename='js/playerSelect.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/playerSelect.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div id="extraPanel">
+        <h2>Selected Hero</h2>
+        <div id=playerSelect></div>
+    </div>
+
+    <div>
+        <table id="playerSelectMenu"></table>
+        <button id="confirmPlayerBtn" class="confirmBtn menuBtn">Confirm Character</button>
+
+    </div>
+    <div id="playerStats">
+    </div>
+</div>
+
+
+
+{% endblock %}

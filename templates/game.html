@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+<script type="module" src="{{ url_for('static', filename='js/game.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div id="timerContainer">
+    <div id="timer">00:00</div>
+</div>
+<div id="UI">
+    <div id="healthBar"></div>
+    <div id="potionEffect"></div>
+    <div id="abilityUI">
+        <img src="{{ url_for('static', filename='assets/UI/skullHead.png') }}" alt="">
+        <img id="skullBar" src="{{ url_for('static', filename='assets/UI/skullBar.png') }}" alt="Cool Down Bar" />
+    </div>
+</div>
+
+<canvas width="512px" width="500px"></canvas>
+<div id="inventoryUI" class="inventoryUI" style="display: none;">
+    <div>
+        <h2>Inventory</h2>
+        <div id="inventoryList"></div>
+    </div>
+    <div id="Stats">
+        <h2>Player Stats</h2>
+        <div id="playerStats" class="player_Stats"></div>
+    </div>
+    <div class="errorMessages"></div>
+</div>
+<div id="tavernUI" class="tavernUI" style="display: none;">
+    <div>
+        <h2>Tavern</h2>
+        <div>
+            <h3>Upgrades</h3>
+            <div id="upgradeList"></div>
+        </div>
+        <div>
+            <h3>Buy Items</h3>
+            <div id="buyList"></div>
+        </div>
+        <div>
+            <h3>Sell Items</h3>
+            <div id="sellList"></div>
+        </div>
+    </div>
+    <div id="Stats">
+        <h2>Player Stats</h2>
+        <div id="playerStats" class="player_Stats"></div>
+        <div id="itemPopUp"></div>
+    </div>
+
+    <div class="errorMessages"></div>
+</div>
+<div id="cheatsUI" class="cheatsUI" style="display: none;">
+
+</div>
+<div id="InventoryNotifications">
+</div>
+<div id="gameOverScreen"></div>
+
+{% endblock %}

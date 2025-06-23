@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Escape the Dark</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/settings.css') }}">
+<script type="module" src="{{ url_for('static', filename='js/settings.js') }}"></script>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div id="options">
+        <h1>Game Settings</h1>
+        <div>
+            <button id="audioBtn" class="menuBtn">Audio</button>
+            <button id="graphicBtn" class="menuBtn">Graphics</button>
+            <button id="backBtn" class="menuBtn">Back</button>
+        </div>
+    </div>
+
+
+    <div id="settingsPanel">
+        <div id="audio" class="settingSection hidden">
+            <h2>Audio Settings</h2>
+
+            <div class="sliderContainer">
+                <label>Music Volume: </label>
+                <input class="slider Music" type="range" min="0" max="100">
+                <span class="valueDisplay"></span>
+            </div>
+
+            <div class="sliderContainer">
+                <label>Effects Volume: </label>
+                <input class="slider Effects" type="range" min="0" max="100">
+                <span class="valueDisplay"></span>
+            </div>
+
+            <div class="sliderContainer">
+                <label>Interface Volume: </label>
+                <input class="slider Interface" type="range" min="0" max="100">
+                <span class="valueDisplay"></span>
+            </div>
+        </div>
+        <div id="graphics" class="settingSection hidden">
+            <h2>Graphics Settings</h2>
+            <button id="fullscreenToggle">Enter Fullscreen</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

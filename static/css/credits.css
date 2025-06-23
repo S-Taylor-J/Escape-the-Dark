@@ -1,0 +1,34 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  padding: 10px 10px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+#backBtn {
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+  color: white;
+  font-size: 3em;
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+}
+#backBtn:hover {
+  color: rgb(255, 255, 255, 0.5);
+}

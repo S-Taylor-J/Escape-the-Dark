@@ -1,0 +1,92 @@
+html {
+  background-color: rgb(8, 8, 8);
+  color: white;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/Background/titlePage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+h1,
+h2 {
+  margin-bottom: 1em;
+}
+
+#howToPlay {
+  padding: 2em;
+  margin: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#objective {
+  text-align: center;
+}
+#howToPlay div {
+  margin-left: 2em;
+  margin-bottom: 4em;
+}
+img {
+  width: 10em;
+  float: left;
+}
+
+.individualBtn {
+  width: 4em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  p {
+    margin-left: 2em;
+  }
+}
+.information div {
+  display: flex;
+  align-items: center;
+}
+
+#backBtn {
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+  color: white;
+  font-size: 2em;
+}
+
+#backBtn:hover {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+#playerUtility div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  h3 {
+    margin-bottom: 1em;
+  }
+}
+
+.utilityImg {
+  width: 80%;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1em;
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../assets/Background/titlePage.png");
+  background-repeat: no-repeat;
+  background-color: rgb(8, 8, 8);
+  background-position: center;
+  height: 100vh;
+}
+p {
+  position: fixed;
+  left: 46.5%;
+  bottom: 2em;
+  color: white;
+  animation: flash 2s infinite;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

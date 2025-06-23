@@ -1,70 +1,61 @@
-🗺️ Rogue Maze - Top-Down 2D Rogue-like Game
-A top-down 2D rogue-like maze game built with JavaScript for the frontend and Flask (Python) for the backend. Navigate through a maze filled with traps, mobs, and treasure. Collect gold and potions to upgrade your character—but if you die, you lose everything and must start over.
+# 🗺️ Escape the Dark - Top-Down 2D Maze Game
 
+A **top-down 2D maze game** built with **JavaScript** for the frontend and **Flask (Python)** for the backend. Navigate through a maze filled with traps, mobs, and treasure. Collect gold and potions to upgrade your character—but **if you die, you lose everything and must start over**.
 
-🎮 Features
-⚔️ Traps & enemy mobs
+## 🎮 Features
 
-💰 Lootable chests (gold & potions)
+- ⚔️ Traps & enemy mobs
+- 💰 Lootable chests (gold & potions)
+- 🛡️ Character upgrades & potion shop
+- ☠️ Permadeath — restart from scratch on death
 
-🛡️ Character upgrades & potion shop
+## 🕹️ Controls
+| Action         | Key         |
+| -------------- | ----------- |
+| Move           | W / A / S / D |
+| Ability        | E           |
+| Stun Mobs      | Q           |
+| Inventory      | SHIFT       |
+|Shop Menu       | T |
+|Cheats|C|
 
-☠️ Permadeath — restart from scratch on death
+## 📦 Installation & Run
 
-
-🕹️ Controls
-W / A / S / D — Move
-
-E — Interact / open chests
-
-(Optional) Mouse — Attack / interact
-
-
-📦 Installation & Run
-Clone the repository:
-
-bash
-'''
-Copy
-Edit
+1. Clone the repository:
+```bash
 git clone https://github.com/yourusername/rogue-maze.git
 cd rogue-maze
-(Optional but recommended) Create a virtual environment:
-
-'''
-
-bash
-Copy
-Edit
+```
+2. (Optional but recommended) Create a virtual environment:
+``` bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install Flask:
-
-bash
-Copy
-Edit
+```
+3. Install dependencies
+```bash
 pip install Flask
-Run the Flask app:
-
-bash
-Copy
-Edit
+```
+4. Run the Flask server
+```bash
 flask run
-Open your browser and go to http://127.0.0.1:5000/ to play.
+```
 
-🛠️ Built With
-Frontend: HTML5, CSS, JavaScript (Canvas)
+5. Play the Game
+```cpp
+http://127.0.0.1:5000/
+```
 
-Backend: Python, Flask
+## 🛠️ Technologies Used
+Frontend: HTML5, CSS, JavaScript
 
-🚧 Future Improvements
-More enemy types
+Backend: Python 3, Flask
 
-Character abilities or classes
+## 🚧 Future Improvements
+More enemy types & AI behaviour
 
-Save/load feature (optional)
+Save/load progression (optional, for balance)
 
-Sound & music integration
 
-📄 License
-MIT License
+## 📄 License
+This project is licensed under the MIT License.
+

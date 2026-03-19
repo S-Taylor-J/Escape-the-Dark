@@ -57,7 +57,6 @@ function backButton() {
   let backButton = document.getElementById("backBtn");
 
   backButton.addEventListener("click", () => {
-    window.location.href =
-      "https://cs1.ucc.ie/~tjs2/cgi-bin/ca2/run.py/homepage";
+    window.location.href = "/homepage";
   });
 }

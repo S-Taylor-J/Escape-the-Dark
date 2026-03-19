@@ -42,7 +42,7 @@ export function createButton(
   altText,
   extraSpan = null,
   onClick,
-  tooltip = null
+  tooltip = null,
 ) {
   let button = document.createElement("button");
   button.classList.add("shopItem");
@@ -92,8 +92,7 @@ export function gameOver(raf) {
   homePageButton.classList.add("homePageButton");
   homePageButton.innerHTML = "Home Page";
   homePageButton.addEventListener("click", function () {
-    window.location.href =
-      "https://cs1.ucc.ie/~tjs2/cgi-bin/ca2/run.py/homepage";
+    window.location.href = "/homepage";
   });
   textDiv.append(homePageButton);
   textDiv.append(restartButton);

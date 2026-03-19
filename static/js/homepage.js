@@ -18,22 +18,19 @@ function menuBtn() {
   let settingBtn = document.getElementById("settingsBtn");
   let creditBtn = document.getElementById("creditBtn");
   playBtn.addEventListener("click", () => {
-    window.location.href = "https://cs1.ucc.ie/~tjs2/cgi-bin/ca2/run.py/game";
+    window.location.href = "/game";
   });
   playerSelectBtn.addEventListener("click", () => {
-    window.location.href =
-      "https://cs1.ucc.ie/~tjs2/cgi-bin/ca2/run.py/playerSelect";
+    window.location.href = "/playerSelect";
   });
   settingBtn.addEventListener("click", () => {
-    window.location.href =
-      "https://cs1.ucc.ie/~tjs2/cgi-bin/ca2/run.py/settings";
+    window.location.href = "/settings";
   });
   howToPlayBtn.addEventListener("click", () => {
-    window.location.href =
-      "https://cs1.ucc.ie/~tjs2/cgi-bin/ca2/run.py/howToPlay";
+    window.location.href = "/howToPlay";
   });
   creditBtn.addEventListener("click", () => {
-    window.location.href = "https://cs1.ucc.ie/~tjs2/cgi-bin/ca2/run.py/credit";
+    window.location.href = "/credit";
   });
 
   document.addEventListener("mousemove", resetInactivityTimer);
@@ -47,6 +44,6 @@ function resetInactivityTimer() {
   clearInterval(inactivityTimer);
 
   inactivityTimer = setTimeout(() => {
-    window.location.href = "https://cs1.ucc.ie/~tjs2/cgi-bin/ca2/run.py/";
+    window.location.href = "/";
   }, 5000);
 }
